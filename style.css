@@ -1,9 +1,6 @@
 *{
     font-family: 'Roboto',sans-serif;
 }
-.bg-inicio{
-    background-color: #37474F;
-}
 .img-about{
     width: 500px;
 }
@@ -22,4 +19,29 @@
 .carousel-item.active{
     display: flex !important;
     justify-content: center !important;
+}
+.img-signIn{
+    width: 60%;
+}
+.form{
+    width: 40%;
+    padding: 1.5rem;
+}
+.form_group-svg-input{
+    display: flex;
+    gap: .3rem;
+    border: 1px solid #0dcaf0be;
+    border-radius: 0.4;
+    padding: 0.2rem 0.4rem;
+    transition: all 0.15s ease-in-out;
+}
+.inputs{
+    width: 100%;
+    border: none;
+}
+.inputs:focus{
+    outline: none;
+}
+.form_group-svg-input:focus-within {
+    box-shadow: 0 0 10px #0dcaf08c ;
 }
