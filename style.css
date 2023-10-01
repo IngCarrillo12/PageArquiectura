@@ -3,12 +3,37 @@
 }
 .img-about{
     width: 500px;
+    transition: all .3s ease-in-out;
+}
+.img-about:hover{
+ width: 87%;
 }
 .img-logo{
     width: 150px;
+    transition: all .3s ease-in-out;
+}
+.img-logo:hover{
+  width: 155px;
 }
 .img-house{
     width: 500px;
+    transition: all .3s ease-in-out;
+}
+.img-house:hover{
+  width: 510px;
+}
+.navbar-brand{
+  transition: all .2s ease-in-out;
+}
+.navbar-brand:hover{
+  color: #0dcaf08c !important;
+}
+.navbar-nav .nav-link.active{
+  color: #0dcaf08c !important;
+  font-weight: 600;
+}
+.nav-link:hover{
+  color: #0dcaf08c !important;
 }
 .carousel-control-next-icon{
     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADjklEQVR4nO3dz0sUYRzH8S3dXSt/gml2rT/AU4gUGBJiUWB06hBBhVD/Qp3qEAVdo6KTQdBJQqFDOc/XjG4WBOEh3ecb1CnInefZJKOemI3BsSwtt3m+u/t5w1w8Pc+8mOeZAXcmk0EICcs5t8X3GOq+wBZ2KcPXlOGXyuhPyvCysjxHhq8+NvPddX+C0kyZwkkyvESW3VqHshxOh/pEqoOq18jyaWX011UARv+KYvQ3KvGo7/HWdM/Mmy6y/DE+6XefP3L7Dg24XFPeZXNZ1z886MZmp1ajGH3B97hrNmX4ehJje/MOF+3pyaO5rdXdDMZxpaQRGZ6NQaIr42eM+NjR2gKUNG5tyegvEUYQFsrL1O9AgJJSynIxvkLy25r+CAKUFCKrX8UgB44OrQuSwfL130EuxiD3X02XN3CgeIys7iGrP8Qod2YmXWtH+8ZRpnD3VfGULRwuP18ARU5k9Znk0/qmrxSDh0eg1GK4UgQGFIEBRWBAERhQBAYUgQFFYEARGOGJXl4EFHkRUORFQJEXAUVeBBR5EVDkRUCRFwFFXgQUeRFQ5EVAkRcBRV4EFHkRUORFQJEXAUVeBBR5EVDkRUCRF5V4tJI/hVBh4bjvOVV9VEkUy8UgfNfpe041h3IzGC+f7I2gRD/Du/cySLx1Ql/yPZ9MvaMMjBxZATE86XsumXpfvjq6OhN7Cb/3PY+aBbn9dMK1tLetC9LZ0w0QqUuWMjxR8cHVW4RNvfqXqcxab5WwXJwO3+/0PaeqjSqJET0YlgojvudUtZHVZ5O/jd80Rvj2vO85VW0EDDkRMOREwJATAUNOBAw5ETDkRMCQEwFDTgQMOREw5ETAkBMBQ04EDDkRMOREwJATAUNOBAw5ETDkRMCQEzAEBQxBAUNQwBAUMAQFDEEBQ1DAEBQwBAUMQakSH6vkf6ETvrn+782UeHfye7jA8BwZfSXGGHsR4NOrvlOW52KQvqGDWKZ8FjjXqAwvl7+nXlxw2VwWe4ZvkPgD91OL866hsREbuO+U4YV4yerd34e7Kd8pq2/EILfoocs15dd8uQtubVMqWHy7lwwvJVF6D/SVl69sPuf6hwdXvWlH4TkjBRSrz6282ujHEW3yQVhY9bfyw2OJR1MYElKWTymjSz/DJN6QEOJH+Sn3ZJH3RHtKtNFHt8PK8Gey/FoZvkxW96Q9HpTIObf1gXMNOCkIocxf9R0WDMLUU8bmuQAAAABJRU5ErkJggg==") !important;
@@ -20,12 +45,16 @@
     display: flex !important;
     justify-content: center !important;
 }
+
+.footer{
+  width: 25%;
+}
+.footer-container{
+  flex-direction: column;
+  width: 25%;
+}
 .img-signIn{
     width: 60%;
-}
-.form{
-    width: 40%;
-    padding: 1.5rem;
 }
 .form_group-svg-input{
     display: flex;
@@ -34,6 +63,8 @@
     border-radius: 0.4;
     padding: 0.2rem 0.4rem;
     transition: all 0.15s ease-in-out;
+    border-radius: 10px;
+    align-items: center;
 }
 .inputs{
     width: 100%;
@@ -45,3 +76,193 @@
 .form_group-svg-input:focus-within {
     box-shadow: 0 0 10px #0dcaf08c ;
 }
+.alert{
+  position: absolute !important;
+  left: -90%;
+  top: -70px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #0dcaf08c;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 0px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #0dcaf08c;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #0dcaf08c;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+    margin: 0.2rem;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: #0dcaf08c;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline #0dcaf08c;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  .labels-birthday{
+    width: 32.7%;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  .form label .input-signIn{
+    padding: 10px;
+    border: none;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+ 
+  .form label .input-signIn + span {
+    left: 55px;
+    top: 15px;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+
+  .form label .input:focus + span,.form label .input + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  .form label .input-signIn:focus + span,.form label .input-signIn + span {
+    top: 34px;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  .input-table{
+    width: 120px;
+    border: none;
+    background-color: transparent;
+  }
+  .input-birthday-day{
+    width:40px;
+  }
+  .input-birthday-month{
+    width: 40px;
+  }
+  .input-birthday-year{
+    width: 60px;
+  }
+  .input-lg{
+    width: 170px;
+  }
+  @media screen and (max-width: 1050px) {
+    .img-signIn{
+      display: none;
+    }
+    .form{
+      width: 100% !important;
+      padding: 1rem 0;
+    }
+    .img-about{
+      width: 100%;
+    }
+    .sections-responsive{
+      text-align: center !important;
+      padding: .5rem 1rem !important;
+    }
+    .img-house{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .img-logo{
+      width: 80px;
+    }
+    .footer{
+      flex-direction: column;
+    }
+    .footer-container{
+      width: 100% ;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
+    .alert{
+      left: 5%;
+    }
+
+  }
