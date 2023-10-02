@@ -244,8 +244,11 @@
       padding: .5rem 1rem !important;
     }
     .img-house{
-      width: 100%;
+      width: 98%;
       margin-bottom: 1rem;
+    }
+    .img-house:hover{
+      width: 100%;
     }
     .img-logo{
       width: 80px;
@@ -264,5 +267,5 @@
     .alert{
       left: 5%;
     }
-
+ 
   }
