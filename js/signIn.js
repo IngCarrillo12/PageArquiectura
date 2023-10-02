@@ -9,5 +9,5 @@ form.addEventListener("submit",(e)=>{
         alert("Email o password incorrectas!")
         return
     }
-    window.location.pathname="../pages/tableUsers.html"
+    window.location.pathname="PageArquitectura/pages/tableUsers.html"
 })
